@@ -268,3 +268,34 @@ p+p{margin-top:.9em}
 .tarjeta-pami{flex-direction:column;align-items:flex-start;gap:4px;padding:14px 18px}
 .tarjeta-pami .logo-pami{width:92px}
 .tarjeta-pami span{font-size:.8rem;font-weight:600;color:var(--texto-suave);letter-spacing:.04em}
+
+/* Popup de consulta */
+.consulta{border:0;padding:0;border-radius:28px;width:min(560px,calc(100% - 24px));max-height:calc(100dvh - 24px);background:var(--blanco);color:var(--texto);box-shadow:0 30px 80px -20px rgba(31,65,69,.55);overflow:auto}
+.consulta::backdrop{background:rgba(31,65,69,.55);backdrop-filter:blur(3px)}
+.consulta[open]{animation:consulta-in .22s ease-out}
+@keyframes consulta-in{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+.consulta-form,.consulta-gracias{padding:clamp(26px,5vw,40px)}
+.consulta h2{font-size:clamp(1.5rem,3vw,1.9rem);padding-right:40px}
+.consulta .etiqueta{margin-bottom:12px}
+.consulta-bajada{color:var(--texto-suave);margin:8px 0 22px;font-size:1rem;line-height:1.5}
+.consulta-cerrar{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:var(--crema);color:var(--teal);font-size:1.6rem;line-height:1;cursor:pointer}
+.consulta-cerrar:hover{background:var(--crema-2)}
+.consulta form{display:grid;gap:14px}
+.consulta label{display:grid;gap:6px;font-size:.9rem;font-weight:600;color:var(--teal-900)}
+.consulta label small{font-weight:400;color:var(--texto-suave)}
+.consulta input,.consulta select,.consulta textarea{font:500 1rem var(--sans);color:var(--texto);background:#fff;border:1.5px solid #DCE5E5;border-radius:14px;padding:13px 14px;width:100%}
+.consulta input:focus,.consulta select:focus,.consulta textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 4px rgba(47,93,98,.12)}
+.consulta input:user-invalid{border-color:#C0563B}
+.consulta-fila{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.consulta-enviar{justify-content:center;margin-top:6px;width:100%}
+.consulta-nota{font-size:.82rem;color:var(--texto-suave);text-align:center}
+.consulta-gracias{display:none;text-align:center;justify-items:center;gap:12px}
+.consulta-gracias .ico-circ{width:72px;height:72px;background:var(--oro-100);color:var(--oro-700);margin-bottom:6px}
+.consulta-gracias .ico-circ svg{width:32px;height:32px}
+.consulta-gracias p{color:var(--texto-suave)}
+.consulta-gracias .btn{margin-top:10px}
+.consulta.enviado .consulta-form{display:none}
+.consulta.enviado .consulta-gracias{display:grid}
+@media (max-width:560px){.consulta-fila{grid-template-columns:1fr}.consulta{border-radius:22px}}
+.consulta [hidden]{display:none!important}
+.consulta{margin:auto}
