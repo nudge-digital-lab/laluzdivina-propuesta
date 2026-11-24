@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="1024" height="1024"><g id="mark"><clipPath id="halo"><circle cx="120" cy="120" r="112"/></clipPath>
+  <!-- warm light halo -->
+  <circle cx="120" cy="120" r="112" fill="#FBF3E4"/>
+  <g stroke="#E9A23B" stroke-width="5" stroke-linecap="round">
+    <line x1="120" y1="22" x2="120" y2="42"/>
+    <line x1="71" y1="35" x2="81" y2="52"/>
+    <line x1="169" y1="35" x2="159" y2="52"/>
+    <line x1="35" y1="71" x2="52" y2="81"/>
+    <line x1="205" y1="71" x2="188" y2="81"/>
+    <line x1="24" y1="120" x2="42" y2="120"/>
+    <line x1="216" y1="120" x2="198" y2="120"/>
+  </g>
+  <circle cx="120" cy="120" r="66" fill="#F6C76A"/>
+  <circle cx="120" cy="120" r="52" fill="#F3B44C"/>
+  <!-- ground / garden hill -->
+  <g clip-path="url(#halo)"><path d="M14 168 Q120 132 226 168 L226 180 Q120 236 14 180 Z" fill="#7FA07A"/>
+  <path d="M30 178 Q120 150 210 178 Q170 214 120 216 Q70 214 30 178 Z" fill="#5E8560"/></g>
+  <!-- house -->
+  <path d="M78 176 V124 L120 92 L162 124 V176 Z" fill="#FFFDF8"/>
+  <path d="M68 128 L120 86 L172 128" fill="none" stroke="#2F5D62" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- chimney with soft smoke (homemade bread) -->
+  <rect x="142" y="94" width="11" height="22" rx="2" fill="#2F5D62"/>
+  <path d="M148 88 q-7 -8 0 -15 q7 -7 0 -14" fill="none" stroke="#FFFDF8" stroke-width="4" stroke-linecap="round" opacity=".95"/>
+  <!-- heart window glowing -->
+  <path d="M120 152 C104 141 100 131 106 124 C111 118 118 120 120 126 C122 120 129 118 134 124 C140 131 136 141 120 152 Z" fill="#E9A23B"/>
+  <!-- door line -->
+  <path d="M78 176 H162" stroke="#2F5D62" stroke-width="4" stroke-linecap="round"/>
+  <!-- two little figures holding hands (care) -->
+  <g fill="#2F5D62">
+    <circle cx="52" cy="150" r="6"/>
+    <path d="M45 176 v-14 q0 -6 7 -6 q7 0 7 6 v14 z"/>
+    <circle cx="188" cy="150" r="6"/>
+    <path d="M181 176 v-14 q0 -6 7 -6 q7 0 7 6 v14 z"/>
+  </g>
+</g></svg>
