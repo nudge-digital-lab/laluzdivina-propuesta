@@ -299,3 +299,15 @@ p+p{margin-top:.9em}
 @media (max-width:560px){.consulta-fila{grid-template-columns:1fr}.consulta{border-radius:22px}}
 .consulta [hidden]{display:none!important}
 .consulta{margin:auto}
+
+/* Misión, compromiso y objetivos (Nosotros) */
+.mision{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start}
+.mision-texto p{margin-top:16px;font-size:1.08rem}
+.compromiso{margin-top:28px;background:#fff;border-left:4px solid var(--oro);border-radius:0 var(--radio) var(--radio) 0;padding:22px 26px;color:var(--texto);font-size:1rem;line-height:1.6}
+.compromiso strong{color:var(--teal);font-family:var(--serif);font-weight:600}
+.objetivos{background:#fff;border-radius:var(--radio-lg);padding:clamp(26px,4vw,40px);box-shadow:0 10px 30px -22px rgba(31,65,69,.5)}
+.objetivos h3{font-size:1.4rem}
+/* Lista de actividades con detalle (Servicios) */
+.tildes--detalle li{font-size:.98rem;line-height:1.5}
+.tildes--detalle strong{color:var(--teal)}
+@media (max-width:860px){.mision{grid-template-columns:1fr}}
