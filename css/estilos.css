@@ -365,3 +365,34 @@ section[id],article[id]{scroll-margin-top:110px}
 .encabezado .mega-panel .contenedor.mega-grid{display:grid;height:auto;align-items:start;justify-content:stretch}
 .menu-celu .sub-celu summary{width:auto;height:auto;background:none;display:flex;justify-content:space-between;color:var(--texto)}
 .menu-celu .sub-celu[open] summary{color:var(--teal)}
+
+/* Tarjetas de servicio clickeables + popup */
+.servicio{position:relative;cursor:pointer}
+.servicio-mas{margin-top:auto;align-self:flex-start;background:rgba(255,255,255,.1);border:0;border-radius:999px;padding:8px 14px;font:600 .85rem var(--sans);color:var(--oro);cursor:pointer;transition:background .15s}
+.servicio-mas::after{content:"";position:absolute;inset:0;border-radius:var(--radio)}
+.servicio:hover .servicio-mas{background:rgba(255,255,255,.18)}
+.servicio-mas:focus-visible{outline:3px solid var(--oro);outline-offset:3px}
+.servicio--destacado .servicio-mas{background:rgba(255,255,255,.4);color:var(--teal-900)}
+.servicio-modal{border:0;padding:0;margin:auto;border-radius:28px;width:min(860px,calc(100% - 24px));max-height:calc(100dvh - 24px);background:var(--blanco);color:var(--texto);box-shadow:0 30px 80px -20px rgba(31,65,69,.55);overflow:auto}
+.servicio-modal[open]{display:grid;grid-template-columns:1fr 1.1fr;animation:consulta-in .22s ease-out}
+.servicio-modal::backdrop{background:rgba(31,65,69,.55);backdrop-filter:blur(3px)}
+.sm-foto{position:relative;margin:0;min-height:420px}
+.sm-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sm-icono{position:absolute;left:22px;bottom:22px;width:60px;height:60px;background:var(--blanco);color:var(--teal);box-shadow:var(--sombra)}
+.sm-icono svg{width:28px;height:28px}
+.sm-cuerpo{padding:clamp(26px,4vw,44px);display:flex;flex-direction:column}
+.sm-cuerpo .etiqueta{align-self:flex-start;margin-bottom:12px}
+.sm-cuerpo h2{font-size:clamp(1.6rem,3vw,2.2rem);padding-right:36px}
+.sm-bajada{font-size:1.1rem;color:var(--teal);font-weight:500;margin-top:10px;line-height:1.5}
+.sm-info{color:var(--texto-suave);margin-top:14px;line-height:1.65}
+.sm-acciones{margin-top:auto;padding-top:28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.sm-nav{display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--texto-suave)}
+.sm-flecha{width:40px;height:40px;border-radius:50%;border:1.5px solid #DCE5E5;background:#fff;color:var(--teal);font-size:1.1rem;cursor:pointer}
+.sm-flecha:hover{border-color:var(--teal)}
+.servicio-modal .consulta-cerrar{z-index:2}
+@media (max-width:720px){
+  .servicio-modal[open]{grid-template-columns:1fr}
+  .sm-foto{min-height:220px}
+  .sm-acciones .btn{width:100%;justify-content:center}
+  .sm-nav{width:100%;justify-content:center}
+}
