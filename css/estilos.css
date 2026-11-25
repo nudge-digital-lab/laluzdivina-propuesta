@@ -396,3 +396,10 @@ section[id],article[id]{scroll-margin-top:110px}
   .sm-acciones .btn{width:100%;justify-content:center}
   .sm-nav{width:100%;justify-content:center}
 }
+/* «Ver más» discreto: link de texto, sin botón */
+.servicio-mas{background:none!important;padding:0;margin-top:auto;font-size:.82rem;font-weight:500;color:rgba(255,255,255,.6);letter-spacing:.02em;border-radius:0}
+.servicio-mas span{display:inline-block;margin-left:4px;transition:transform .2s}
+.servicio:hover .servicio-mas{color:var(--oro)}
+.servicio:hover .servicio-mas span{transform:translateX(3px)}
+.servicio--destacado .servicio-mas{color:rgba(31,65,69,.65)}
+.servicio--destacado:hover .servicio-mas{color:var(--teal-900)}
