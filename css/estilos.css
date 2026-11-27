@@ -403,3 +403,9 @@ section[id],article[id]{scroll-margin-top:110px}
 .servicio:hover .servicio-mas span{transform:translateX(3px)}
 .servicio--destacado .servicio-mas{color:rgba(31,65,69,.65)}
 .servicio--destacado:hover .servicio-mas{color:var(--teal-900)}
+/* Mapa real y datos de contacto con link */
+.mapa{background:#DDE5DA;overflow:hidden;min-height:360px}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.contacto-lista a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25)}
+.contacto-lista a:hover{border-bottom-color:var(--oro)}
+.pie ul li{line-height:1.45}
